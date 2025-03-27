@@ -3,11 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Split Rocks Lending Library</title>
-    <link rel="stylesheet" href="style/style.css"/>
+    <title>Meriadoc Homeschool Library</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     
     <style>
+        @import url('https://fonts.cdnfonts.com/css/gentium-basic');
+        *{
+            font-family: 'Gentium Basic', serif;
+        }
+        nav{
+            background-color: #f8f8f8;
+            padding: 10px;
+    
+        }
+        .body-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        #logo{
+            display: block;
+            margin: 0 auto;
+        }
+        nav a{
+            font-size: 20px;
+            color: #004AAD;
+            &:hover{
+                color: black;
+            }
+        }
+        .page-header{
+            text-align: center;
+        }
         
         #logo{
             display: block;
@@ -28,23 +54,86 @@
             width:50vw;
             transform: translate(50%, 0%);
         }
+        details{
+            font-size: 20px;
+            
+        }
+        details summary{
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        details p{
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        a{
+            color: green;
+            &:hover{
+                color: black;
+            }
+        }
     
     </style>
 </head>
 <body>
     <nav>
-        <a href="https://www.librarything.com/catalog/dianependergraft">View my Catalog</a>
-        &nbsp;
-        <a href="pages/about-us.html">About Us</a>
+        <p>Meriadoc Homeschool Library</p>
+        
         
         
     </nav>
     <div class="body-container">
         <img src="images/library-logo.jpg" width="250" id="logo"/>
 
-        <h1 class="page-header">Welcome to the Split Rocks Lending Library!</h1>
+        <h1 class="page-header">Welcome to the Meriadoc Homeschool Library!</h1>
+        <p>This is a line about your library</p>
+        
+        <details>
+            <summary>Where Are You Located?</summary>
+            <p>We are Located in Clear Lake, southeast Houston, TX</p>
+        </details>
+        <details>
+            <summary>What are your Hours?</summary>
+            <p>Mondays, Tuesdays, and Fridays 9:00 To 4:00</p>
+        </details>
+        <details>
+            <summary>How Does This Work?</summary>
+            <p>This is private lending library in my home, open to members.</p>
+        </details>
+        <details>
+            <summary>How Much Does This Cost?</summary>
+            <p>$72 per year, renewable in January.</p>
+        </details>
+        <details>
+            <summary>Can I Request Holds Without Coming Into The Library?</summary>
+            <p>Absolutely! We have a TinyCat account and every patron is given their own holds login. You can check our catalog here.</p>
+            <a href="">View Catalog</a>
+        </details>
+        <details>
+            <summary>What Is Included In My Membership?</summary>
+            <p>
+            <ul>
+                <li>Full access to the library collection of more than 12,000 excellent books.</li>
+                <li>Curated picture book boxes with books on various themes available for checkout</li>
+                <li>Readers’ Advisory in person or via email. Librarian Sherry Early can help you choose living books for your homeschool curriculum needs or for leisure reading.</li>
+                <li>Audiobooks on CD, math manipulatives, science supports, book study guides, all in addition to the riches of trustworthy, literary, living books, both classic and new.</li>
+            </ul>
+            </p>
+        </details>
+        <details>
+            <summary>Contact Us</summary>
+            <div id="contact">
+                <p>You can email us at <a href="mailto:sherry.pray4you@gmail.com">sherry.pray4you@gmail.com</a></p>
+            </div>
+        </details>
         
     </div>
+    
     
 
 </body>

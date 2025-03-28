@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meriadoc Homeschool Library</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!--[if !IE]> -->
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.smore.com/css/list-form-signup.2981f49d.css"/>
+    <!-- <![endif]-->
+        <!--[if IE]>
+        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.smore.com/css/list-form-signup.2981f49d.0.css"/>
+        <![endif]-->
     
     <style>
         @import url('https://fonts.cdnfonts.com/css/gentium-basic');
@@ -14,7 +20,9 @@
         *{
             font-family: 'Gentium Basic', serif;
         }
-        
+        .body-container p{
+            font-size: 18px;
+        }
         nav,footer {
             background-color: #f8f8f8;
             padding: 10px;
@@ -102,6 +110,20 @@
             aspect-ratio: 4 / 3;
             /*border: 1px solid var(--detail-color);*/
         }
+        .smore-list-subscribe-form {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+            
+        }
+        #smore-subscribe-button{
+            background-color: var(--detail-color)!important;
+            &:hover{
+                background-color: black !important;
+            }
+        }
+        
+
         
     
     </style>
@@ -115,7 +137,29 @@
 
         <h1 class="page-header">Welcome to the Meriadoc Homeschool Library!</h1>
         <p>Welcome to Meriadoc Homeschool Library! Our library of over 12,000 books is a private living books lending library for homeschooling families as well as others who want a library experience that will support Christian and traditional values in children’s, young adult, and adult literature. Librarian Sherry Early was once a public school librarian and then a homeschool mom of eight children. She spent twenty-five years educating her children with literature-based curricula—and collecting books to support that education. Now, she is eager to share that rich literary heritage—which belongs to all of us—with your family through the books that you and your family can borrow from Meriadoc Homeschool Library.</p>
+        <div class="smore-list-subscribe-form">
+            <form action="https://secure.smore.com/app/lists/confirm_subscribe" method="POST">
+                <input type="hidden" name="list_id" value="6296b854cbefc7fc18791c85">
 
+                <h3>Subscribe to our newsletter mailing list</h3>
+
+                <div class="field-group">
+                    <label for="smore-subscribe-name">Name
+                    </label>
+                    <input type="text" value="" name="name" class="required email" id="smore-subscribe-name">
+                </div>
+
+                <div class="field-group">
+                    <label for="smore-subscribe-email">Email Address <span class="required">*</span>
+                    </label>
+                    <input type="email" value="" name="email" class="required email" id="smore-subscribe-email">
+                </div>
+
+                <div class="right">
+                    <input type="submit" value="Subscribe" name="subscribe" id="smore-subscribe-button" class="button">
+                </div>
+            </form>
+        </div>
         <h2>FAQ</h2>
         <hr>
         <br/>
@@ -128,15 +172,16 @@
         </details>
         <details>
             <summary>What are your hours?</summary>
-            <p>Mondays, Tuesdays, and Fridays 9:00 To 4:00</p>
+            <p>The library is open on Mondays, Tuesdays, and Fridays from 9:00 to 4:00 for members to browse and check out books.</p>
+            <p>Books on hold can be picked up anytime, and books can be returned anytime to the book drop on the front porch.</p>
         </details>
         <details>
             <summary>How does this work?</summary>
-            <p>This is private lending library in my home, open to members.</p>
+            <p>It's a library! Meriadoc Homeschool Library is a private lending library located in my home, but open to member families who can check out books to support their curriculum and leisure reading. We carry fiction and nonfiction books, mostly for children and teens, with some adult books as well. </p>
         </details>
         <details>
             <summary>How much does this cost?</summary>
-            <p>$72 per year, renewable in January.</p>
+            <p>The cost for a library membership is $72 per year, renewable in January of each year. If you join later in the year, your fee will be prorated to the remaining months in the years ($6.00 per month). We can accept either cash, check, or PayPal in payment of the library fee.</p>
         </details>
         <details>
             <summary>Can I request holds without coming into the library?</summary>
@@ -144,6 +189,7 @@
             <p>After you join you will have a library PIN that will enable you to place a hold on any of the books in the library and then pick them up anytime from the front porch. Books can also be returned anytime in the book drop on the front porch.</p>
             <p>You can check our catalog here.</p>
             <a href="https://www.librarycat.org/lib/sherryearly/" target="_blank" id="holds-catalog">View Catalog</a>
+            
         </details>
         <details>
             <summary>What is included in my membership?</summary>
@@ -153,13 +199,14 @@
                 <li>Curated picture book boxes with books on various themes available for checkout</li>
                 <li>Readers' Advisory in person or via email. Librarian Sherry Early can help you choose living books for your homeschool curriculum needs or for leisure reading.</li>
                 <li>Audiobooks on CD, math manipulatives, science supports, book study guides, all in addition to the riches of trustworthy, literary, living books, both classic and new.</li>
+                <li>A subscription to our monthly Meriadoc Homeschool Library email newsletter as well as our book review newsletter, <a href="https://thecardcataloglibrarians.com/newsletters" target="_blank">Book Review Roundup</a>, also delivered to your email inbox </li>
             </ul>
             </p>
         </details>
         <details>
             <summary>Contact us</summary>
             <div id="contact">
-                <p>You can email us at <a href="mailto:sherry.pray4you@gmail.com">sherry.pray4you@gmail.com</a></p>
+                <p>If you have more questions or want to arrange a tour of the library, you can email the library at  <a href="mailto:sherry.pray4you@gmail.com">sherry.pray4you@gmail.com</a></p>
             </div>
         </details>
     </div>

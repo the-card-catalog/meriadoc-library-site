@@ -8,10 +8,13 @@
     
     <style>
         @import url('https://fonts.cdnfonts.com/css/gentium-basic');
+        :root{
+            --detail-color: green;
+        }
         *{
             font-family: 'Gentium Basic', serif;
         }
-        nav {
+        nav,footer {
             background-color: #f8f8f8;
             padding: 10px;
             width: 100%;
@@ -22,20 +25,18 @@
             margin: 0;
             padding: 0;
         }
-        .body-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
+        
         #logo{
             display: block;
             margin: 0 auto;
         }
-        nav a{
+        nav a, nav p, footer a, .nav-item{
             font-size: 20px;
-            color: #004AAD;
-            &:hover{
-                color: black;
-            }
+            color: var(--detail-color);
+            text-decoration: none;
+        }
+        footer *{
+            padding-left: 15px;
         }
         .page-header{
             text-align: center;
@@ -45,7 +46,7 @@
             display: block;
             margin: 0 auto;
         }
-        #body-container {
+        .body-container {
             width: 70vw;
             margin: 0 auto;
             padding: 20px;
@@ -63,7 +64,10 @@
         }
         details{
             font-size: 20px;
-            
+            border: 1px solid var(--detail-color);
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
             
         }
         details summary{
@@ -75,6 +79,7 @@
         details p{
             font-size: 18px;
             margin-left: 20px;
+            
         }
         html {
             scroll-behavior: smooth;
@@ -85,25 +90,43 @@
                 color: black;
             }
         }
+        #holds-catalog{
+            display: block;
+            text-align: center;
+        }
+        details iframe {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            /*border: 1px solid var(--detail-color);*/
+        }
+        
     
     </style>
 </head>
 <body>
     <nav>
-        <p>Meriadoc Homeschool Library</p>
-        
-        
-        
+       <h3 class="nav-item">Meriadoc Homeschool Library</h3>
     </nav>
     <div class="body-container">
         <img src="images/library-logo.jpg" width="250" id="logo"/>
 
         <h1 class="page-header">Welcome to the Meriadoc Homeschool Library!</h1>
         <p>This is a line about your library</p>
-        
+
+        <h2>FAQ</h2>
+        <hr>
+        <br/>
         <details>
-            <summary>Where Are You Located?</summary>
+            <summary>Where Are You Located? option 1</summary>
             <p>We are Located in Clear Lake, southeast Houston, TX</p>
+        </details>
+        <details>
+            <summary>Where are you located? option 2</summary>
+            <p>Meriadoc Homeschool Library is located in my home in <a href="https://maps.app.goo.gl/7SCvrU2zam8XHv3G6">Clear Lake (15707 Rill Lane, Houston, TX 77062)</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.485058089161!2d-95.13632304511741!3d29.563534462256037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86409c7093fcc3b1%3A0xe6c4f289dea074c1!2s15707%20Rill%20Ln%2C%20Houston%2C%20TX%2077062!5e0!3m2!1sen!2sus!4v1743183960387!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </details>
         <details>
             <summary>What are your Hours?</summary>
@@ -119,8 +142,10 @@
         </details>
         <details>
             <summary>Can I Request Holds Without Coming Into The Library?</summary>
-            <p>Absolutely! We have a TinyCat account and every patron is given their own holds login. You can check our catalog here.</p>
-            <a href="">View Catalog</a>
+            <p>Absolutely! We have a TinyCat account and every patron is given their own holds login.</p>
+            <p>after you join you will have a library PIN that will enable you to place a hold on any of the books in the library and then pick them up anytime from the front porch. Books can also be returned anytime in the book drop on the front porch.</p>
+            <p>You can check our catalog here.</p>
+            <a href="https://www.librarycat.org/lib/sherryearly/" target="_blank" id="holds-catalog">View Catalog</a>
         </details>
         <details>
             <summary>What Is Included In My Membership?</summary>
@@ -128,7 +153,7 @@
             <ul>
                 <li>Full access to the library collection of more than 12,000 excellent books.</li>
                 <li>Curated picture book boxes with books on various themes available for checkout</li>
-                <li>Readers’ Advisory in person or via email. Librarian Sherry Early can help you choose living books for your homeschool curriculum needs or for leisure reading.</li>
+                <li>Readers' Advisory in person or via email. Librarian Sherry Early can help you choose living books for your homeschool curriculum needs or for leisure reading.</li>
                 <li>Audiobooks on CD, math manipulatives, science supports, book study guides, all in addition to the riches of trustworthy, literary, living books, both classic and new.</li>
             </ul>
             </p>
@@ -139,9 +164,15 @@
                 <p>You can email us at <a href="mailto:sherry.pray4you@gmail.com">sherry.pray4you@gmail.com</a></p>
             </div>
         </details>
-        
     </div>
-    
+    <footer>
+        <a href="https://www.librarycat.org/lib/sherryearly/">Catalog</a>
+        <br/> 
+        <a href="https://www.semicolonblog.com">Blog</a> 
+        <br/>
+        <a href="https://thecardcataloglibrarians.com/the-card-catalog-database/sherry-early">Library Story</a>
+        
+    </footer>
     
 
 </body>

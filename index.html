@@ -24,11 +24,16 @@
         .body-container p{
             font-size: 18px;
         }
+        nav{
+            position: sticky;
+            top: 0px;
+            z-index: 1000;
+        }
         nav,footer {
             background-color: #f8f8f8;
             padding: 10px;
             width: 100%;
-            position: relative;
+            
             left: 0;
         }
         html, body {
@@ -129,6 +134,13 @@
         .centered-id{
             margin: 0 auto;
         }
+        .banner {
+            width: 100%;
+            aspect-ratio: 16 / 5;
+            background-image: url('images/mhsl-banner.jpg'); /* Update with correct image path */
+            background-size: cover;
+            background-position: center;
+        }
 
         
     
@@ -138,6 +150,7 @@
     <nav>
        <h3 class="nav-item">Meriadoc Homeschool Library</h3>
     </nav>
+    <div class="banner"></div>
     <div class="body-container">
         <img src="images/library-logo.jpg" width="250" id="logo"/>
 

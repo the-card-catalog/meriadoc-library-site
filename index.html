@@ -173,6 +173,24 @@
             background-position: center;
             filter: blur(1px);  /* Apply a slight blur effect (adjust the px value for more/less blur) */
         }
+        button{
+            color: white;
+            background-color: var(--detail-color);
+            border: 1px solid var(--detail-color);
+            font-size: 25px;
+            border-radius: 20px;
+            padding: 5px, 10px;
+            
+        }
+        button:hover{
+                transform: scale(1.05); 
+            }
+        #contact-us-button{
+            position: fixed;
+            z-index: 1000;
+            bottom: 20px;
+            right: 20px;
+        }
 
         
     
@@ -188,8 +206,10 @@
 
         <h1 class="page-header">Welcome to the Meriadoc Homeschool Library!</h1>
         <p>Welcome to Meriadoc Homeschool Library! Our library of over 12,000 books is a private living books lending library for homeschooling families as well as others who want a library experience that will support Christian and traditional values in children’s, young adult, and adult literature. Librarian Sherry Early was once a public school librarian and then a homeschool mom of eight children. She spent twenty-five years educating her children with literature-based curricula—and collecting books to support that education. Now, she is eager to share that rich literary heritage—which belongs to all of us—with your family through the books that you and your family can borrow from Meriadoc Homeschool Library.</p>
+        <!--
         <div id="wc952c5c5893693a91d16e465d0f58209"></div><script type="text/javascript" charset="UTF-8" src="https://www.librarything.com/widget_get.php?userid=sherryearly&theID=wc952c5c5893693a91d16e465d0f58209"></script><noscript><a href="https://www.librarything.com/catalog/sherryearly">Meriadoc Homeschool Library</a> at <a href="https://www.librarything.com">LibraryThing</a></noscript>
-        
+    -->
+        <button id="contact-us-button" onclick="contactUs()">Contact Us</button>
         <h2>FAQ</h2>
         <hr>
         <br/>
@@ -259,7 +279,7 @@
                 </form>
             </div>
         </details>
-        <details>
+        <details id="contact-details">
             <summary>Contact us</summary>
             <div id="contact">
                 <p>If you have more questions or want to arrange a tour of the library, you can email the library at  <a href="mailto:sherry.pray4you@gmail.com" target="_blank">sherry.pray4you@gmail.com</a></p>
@@ -290,6 +310,14 @@
                 });
             });
         });
+        function contactUs() {
+            const details = document.getElementById("contact-details");
+    
+            if (details) {
+                details.open = true; // Open the <details> section
+                details.scrollIntoView({ behavior: "smooth", block: "start" }); // Scroll to it
+            }
+        }
     </script>
 
 </body>

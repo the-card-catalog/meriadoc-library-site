@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Currently hosted on https://the-card-catalog.github.io/meriadoc-library-site/ -->
+    <!-- Currently hosted on https://meriadoclibrary.com -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://meriadoclibrary.com/images/banner.jpg">
+    <meta property="og:url" content="https://meriadoclibrary.com">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A private lending library for homeschooling families and others who value Christian and traditional literature.">
     <title>Meriadoc Homeschool Library</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <!--[if !IE]> -->
@@ -19,6 +23,7 @@
             --detail-color: green;
             --section-background: #f8f8f8;
             --section-background-transparent: #f8f8f8fa;
+            --banner-image: url('images/banner.jpg');
         }
         @media (max-width: 768px) {
             footer {
@@ -166,7 +171,7 @@
         .banner {
             width: 100%;
             height: 30vh;  /* Set height to 30% of the viewport height */
-            background-image: url('images/banner.jpg'); 
+            background-image: var(--banner-image); 
             background-size: cover;
             background-position: center;
             filter: blur(1px);  /* Apply a slight blur effect (adjust the px value for more/less blur) */
@@ -202,8 +207,8 @@
     <div class="body-container">
         <img src="images/library-logo.jpg" width="250" id="logo"/>
 
-        <h1 class="page-header">Welcome to the Meriadoc Homeschool Library!</h1>
-        <p>Welcome to Meriadoc Homeschool Library! Our library of over 12,000 books is a private living books lending library for homeschooling families as well as others who want a library experience that will support Christian and traditional values in children’s, young adult, and adult literature. Librarian Sherry Early was once a public school librarian and then a homeschool mom of eight children. She spent twenty-five years educating her children with literature-based curricula—and collecting books to support that education. Now, she is eager to share that rich literary heritage—which belongs to all of us—with your family through the books that you and your family can borrow from Meriadoc Homeschool Library.</p>
+        <h1 class="page-header">Welcome Meriadoc Homeschool Library!</h1>
+        <p>Our library of over 12,000 books is a private living books lending library for homeschooling families as well as others who want a library experience that will support Christian and traditional values in children’s, young adult, and adult literature. Librarian Sherry Early was once a public school librarian and then a homeschool mom of eight children. She spent twenty-five years educating her children with literature-based curricula—and collecting books to support that education. Now, she is eager to share that rich literary heritage—which belongs to all of us—with your family through the books that you and your family can borrow from Meriadoc Homeschool Library.</p>
         <!--
         <div id="wc952c5c5893693a91d16e465d0f58209"></div><script type="text/javascript" charset="UTF-8" src="https://www.librarything.com/widget_get.php?userid=sherryearly&theID=wc952c5c5893693a91d16e465d0f58209"></script><noscript><a href="https://www.librarything.com/catalog/sherryearly">Meriadoc Homeschool Library</a> at <a href="https://www.librarything.com">LibraryThing</a></noscript>
     -->
